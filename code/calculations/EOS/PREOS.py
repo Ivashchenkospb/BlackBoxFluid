@@ -166,7 +166,7 @@ class PREOS(EOS):
         bk = self.B_linear_mixed - 1
         ck = self.mixed_A - 3 * (self.B_linear_mixed ** 2) - 2 * self.B_linear_mixed
         dk = (self.B_linear_mixed ** 2) + (self.B_linear_mixed ** 3) - self.mixed_A * self.B_linear_mixed
-        pk = pk = -(bk ** 2) / 3 + ck
+        pk = -(bk ** 2) / 3 + ck
         qk = 2 * (bk ** 3) / 27 - (bk * ck/ 3 ) + dk
         s = ((pk/3) ** 3) + ((qk/2) ** 2) 
 
