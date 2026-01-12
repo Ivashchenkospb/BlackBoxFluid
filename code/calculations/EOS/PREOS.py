@@ -227,7 +227,7 @@ class PREOS(EOS):
         if len(list(self.zi.keys())) == 1:
             eos_roots = self.real_roots_eos
             for root in eos_roots:
-                ln_fi_i = (root - 1 - math.log(root - self.B_linear_mixed) - self.mixed_A / 
+                ln_fi_i = (math.log(self.p) + root - 1 - math.log(root - self.B_linear_mixed) - self.mixed_A /
                            (2* math.sqrt(2) * self.B_linear_mixed) *  math.log((root + (math.sqrt(2) + 1) * 
                             self.B_linear_mixed)/(root - (math.sqrt(2) - 1) * self.B_linear_mixed)))
                 return ln_fi_i
